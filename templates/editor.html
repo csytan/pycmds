@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}Pycmds! Sandbox: {{ name }}{% endblock %}
+
+{% block head %}
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#input").pyCommandLine({
+				suggestUrl: location + '/commands?action=suggest',
+				dispatchUrl: location + '/commands?action=dispatch',
+				delay: 500,
+				cache: false
+			});
+			
+			$("#save").click(function(){
+				var source = editAreaLoader.getValue('sourcecode');
+				$.post(location.href, {source: source}, function(data){
+					alert(data);
+				}, 'text');
+			});
+		});
+	</script>
+	<script language="javascript" type="text/javascript" src="/static/edit_area/edit_area_full.js"></script>
+	<script language="javascript" type="text/javascript">
+		editAreaLoader.init({
+			id : "sourcecode",
+			syntax: "python",
+			start_highlight: true,
+			allow_toggle: false,
+			replace_tab_by_spaces: 4
+		});
+	</script>
+	<style type="text/css">
+		#save {
+			float: right;
+			color: #5DB0E6;
+			background-color: #192636;
+			padding: 5px;
+			text-decoration:none;
+			font-weight: bold;
+		}
+
+		#save:hover {
+			color: #192636;
+			background-color: #5DB0E6;
+		}
+	</style>
+{% endblock %}
+
+{% block content %}
+	<h2>{{ name }}</h2>
+	<a id="save">Save</a>
+	<textarea id="sourcecode" name="source" style="width:100%" rows="30">{{ source }}</textarea>
+{% endblock %}

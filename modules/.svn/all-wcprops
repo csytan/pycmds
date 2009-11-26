@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/63/trunk/modules
+END
+misc.py
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/63/trunk/modules/misc.py
+END
+freebase.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/49/trunk/modules/freebase.py
+END
+youtube.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/55/trunk/modules/youtube.py
+END
+translation.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/60/trunk/modules/translation.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/53/trunk/modules/__init__.py
+END
+utils.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/54/trunk/modules/utils.py
+END
+finance.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/46/trunk/modules/finance.py
+END

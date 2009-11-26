@@ -1,0 +1,61 @@
+8
+
+dir
+64
+https://pycmds.googlecode.com/svn/trunk/static/edit_area/plugins/test
+https://pycmds.googlecode.com/svn
+
+
+
+2008-10-09T23:45:12.308738Z
+48
+csytan
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+20336228-1552-0410-b6a7-8d8d59c9b0bb
+
+langs
+dir
+
+images
+dir
+
+css
+dir
+
+test.js
+file
+
+
+
+
+2008-11-15T07:38:15.000000Z
+8559ea076cd3f47bac8540f91369e7c6
+2008-10-09T23:45:12.308738Z
+48
+csytan
+
+test2.js
+file
+
+
+
+
+2008-11-15T07:38:15.000000Z
+9bef02a43a1bd789ec6534f20fbbfc5d
+2008-10-09T23:45:12.308738Z
+48
+csytan
+

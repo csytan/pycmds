@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+
+{% block title %}Pycmds! Your friendly internet command line{% endblock %}
+
+{% block head %}
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#input").pyCommandLine();
+			
+			
+			var div = $('<div id="tutorialDiv" class="content"></div>').appendTo(document.body);
+			var input = $("#hidden_input");
+			var faceGlasses = '<img src="/static/tutorial/face-glasses.png" style="float:left;"/>';
+			var faceGrin = '<img src="/static/tutorial/face-grin.png" style="float:left;"/>';
+			var faceBigSmile = '<img src="/static/tutorial/face-smile-big.png" style="float:left;"/>';
+			var faceWink = '<img src="/static/tutorial/face-wink.png" style="float:left;"/>';
+
+			function nextSlide(html, callback) {
+				div.fadeOut("slow")
+				.queue(function(){
+					div.empty();
+					div.append('<p>' + html + '</p>')
+					.dequeue();
+				})
+				.fadeIn("slow");
+				
+				if (callback) {
+					div.queue(callback);
+				} else {
+					// 3 second pause
+					div.animate({'borderWidth':"+=0"}, 4000);
+				}
+			}
+			
+			function slowType(text) {
+				var i = 0;
+				var interval = window.setInterval(function(){
+					var letter = text.charAt(i++);
+					if (letter){
+						input.focus()[0].value += letter;
+						input.keyup();
+					}else{
+						window.clearInterval(interval);
+					}
+				}, 150);
+				
+				window.setTimeout(function() {
+					div.dequeue()
+				}, 4000);
+			}
+			
+			function waitForEnterKey() {
+				input.bind("keydown.enter", function(event){
+					if (event.keyCode == 13){
+						input.unbind("keydown.enter");
+						div.dequeue();
+					}
+				});
+			}
+			
+			
+			$("#tutorial").click(function() {
+				nextSlide(faceGlasses + "<p>Hi there!</p>");
+				nextSlide("In this tutorial, I'm going to show you how to use the command line.");
+				nextSlide("Let's start by finding a list of available commands.", function(){
+					input.val('');
+					slowType("list");
+				});
+				nextSlide("I've typed part the command for you.  Press Enter to auto-complete it.", waitForEnterKey);
+				nextSlide(faceBigSmile + "Good Job! <br> Now press the Enter key once more to run it.", waitForEnterKey);
+				nextSlide(faceGrin + "Great! <br> Next, let's look at a more complex command.", function(){
+					input.val('');
+					slowType("albums");
+				});
+				nextSlide("Notice that in this command, <strong>musician</strong> is surrounded by brackets.");
+				nextSlide("This means that it is an input for the name of a musician.");
+				nextSlide("Press the Enter key once to move to the input.", waitForEnterKey);
+				nextSlide("Now we are ready to type the name of a musician", function() {
+					slowType("bob");
+				});
+				nextSlide("Pick an artist from the list using the arrow keys, and press Enter.", waitForEnterKey);
+				nextSlide("Now run the command.", waitForEnterKey);
+				nextSlide(faceWink + "That's all there is to it!");
+				nextSlide("If you have any more questions, try running the <strong>help</strong> command.", waitForEnterKey);
+				
+				return false;
+			});
+		});
+	</script>
+	<style type="text/css">
+		#tutorial {
+			display: block;
+			font-size: 1.4em;
+			color: #192636;
+			background-color: #5DB0E6;
+			padding: 15px;
+			margin-bottom: 40px;
+			margin-right: 35px;
+			text-decoration: none;
+			text-align: center;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+		}
+		
+		#tutorial:hover {
+			color: #FFFFFF;
+			background-color: #DB4390;
+		}
+	
+		#tutorialDiv {
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			margin: 10px;
+			width: 300px;
+			display: none;
+			opacity: 0.9;
+			font-size: 1.5em;
+		}
+	</style>
+{% endblock %}
+
+{% block content %}
+	<div id="leftInner" style="float:left;width:55%;margin-top:20px;">
+		<h1>Friendly</h1>
+		<p>Human readable commands with suggestions at every step of the way.</p>
+		
+		<h1>Fast</h1>
+		<p>Automatic completion of selected commands with the Enter key.</p>
+		
+		<h1>Extensible</h1>
+		<p>Create your own commands in the <a href="http://sandbox.pycmds.org/">Sandbox</a> using the <a href="http://www.python.org/">Python</a> programming language!</p>
+	</div>
+	<div id="rightInner" style="float:right;width:35%;position:relative;top:120px;">
+		<a id="tutorial">Interactive Tutorial</a>
+		<p>We're currently in Beta. Have feedback or suggestions? <a href="http://pycmds.uservoice.com/">pycmds.uservoice.com</a></p>
+	</div>
+	<div style="clear:left"></div>
+{% endblock %}

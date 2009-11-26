@@ -1,0 +1,142 @@
+8
+
+dir
+64
+https://pycmds.googlecode.com/svn/trunk/lib/gdata
+https://pycmds.googlecode.com/svn
+
+
+
+2008-09-24T21:27:41.832192Z
+26
+csytan
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+20336228-1552-0410-b6a7-8d8d59c9b0bb
+
+media
+dir
+
+alt
+dir
+
+blogger
+dir
+
+__init__.py
+file
+
+
+
+
+2008-11-15T07:45:50.000000Z
+da584fbd1ccff24d56bd16524136cf1e
+2008-09-24T21:27:41.832192Z
+26
+csytan
+
+service.py
+file
+
+
+
+
+2008-11-15T07:45:50.000000Z
+dbe644313d28dd33086121dc22c5a591
+2008-09-24T21:27:41.832192Z
+26
+csytan
+
+docs
+dir
+
+auth.py
+file
+
+
+
+
+2008-11-15T07:45:50.000000Z
+881cd992026a48c4d84594507fe4047c
+2008-09-24T21:27:41.832192Z
+26
+csytan
+
+exif
+dir
+
+youtube
+dir
+
+test_data.py
+file
+
+
+
+
+2008-11-15T07:45:50.000000Z
+08847558cbfb8b1474f3785e0e97f443
+2008-09-24T21:27:41.832192Z
+26
+csytan
+
+codesearch
+dir
+
+apps
+dir
+
+urlfetch.py
+file
+
+
+
+
+2008-11-15T07:45:50.000000Z
+3c80c9a52d016c7e98bf38566462dae7
+2008-09-24T21:27:41.832192Z
+26
+csytan
+
+client.py
+file
+
+
+
+
+2008-11-15T07:45:50.000000Z
+72e8ea27f5066c4d366bbeb5b11161b7
+2008-09-24T21:27:41.832192Z
+26
+csytan
+
+spreadsheet
+dir
+
+calendar
+dir
+
+geo
+dir
+
+base
+dir
+
+photos
+dir
+
+contacts
+dir
+

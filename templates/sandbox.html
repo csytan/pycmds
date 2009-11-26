@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Pycmds! Sandbox{% endblock %}
+
+{% block head %}
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#create").click(function(){
+				window.location += $("#create_mod").val();
+			});
+		});
+	</script>
+
+	<style type="text/css">
+		#footer {
+			display: none;
+		}
+		
+		#create {
+			color: #5DB0E6;
+			background-color: #192636;
+			padding: 5px;
+			margin: 5px;
+			font-weight: bold;
+		}
+
+		#create:hover {
+			color: #192636;
+			background-color: #5DB0E6;
+		}
+	</style>
+{% endblock %}
+
+{% block content %}
+	<h2>Welcome to the Sandbox</h2>
+	<p>The sandbox provides a <a href="http://python.org/">Python</a> environment for experimenting.</p>
+	<p>As this is an unrestricted environment, we ask that you please play nicely :-)</p>
+
+	<p>For API examples, check out the <a href="/examples">examples</a> module.<p>
+	
+	<h3>Create a new module</h3>
+	<input id="create_mod" type="text"/><a id="create">Create</a>
+	
+	<h3>Module List</h3>
+	<ul>
+		{% for name in mods %}
+			<li><a href="/{{ name }}">{{ name }}</a></li>
+		{% endfor %}
+	</ul>
+{% endblock %}

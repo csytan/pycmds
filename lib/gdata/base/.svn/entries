@@ -1,0 +1,52 @@
+8
+
+dir
+64
+https://pycmds.googlecode.com/svn/trunk/lib/gdata/base
+https://pycmds.googlecode.com/svn
+
+
+
+2008-09-24T21:27:41.832192Z
+26
+csytan
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+20336228-1552-0410-b6a7-8d8d59c9b0bb
+
+__init__.py
+file
+
+
+
+
+2008-11-15T07:45:48.000000Z
+65e1bcb23bb05a28b86e601f6618dc44
+2008-09-24T21:27:41.832192Z
+26
+csytan
+
+service.py
+file
+
+
+
+
+2008-11-15T07:45:48.000000Z
+3274b119a06aa1bad9cf94dd376004d9
+2008-09-24T21:27:41.832192Z
+26
+csytan
+

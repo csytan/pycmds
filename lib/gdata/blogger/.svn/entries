@@ -1,0 +1,52 @@
+8
+
+dir
+64
+https://pycmds.googlecode.com/svn/trunk/lib/gdata/blogger
+https://pycmds.googlecode.com/svn
+
+
+
+2008-09-24T21:27:41.832192Z
+26
+csytan
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+20336228-1552-0410-b6a7-8d8d59c9b0bb
+
+__init__.py
+file
+
+
+
+
+2008-11-15T07:45:36.000000Z
+788ca9641ae91656af49e0f1fdac08db
+2008-09-24T21:27:41.832192Z
+26
+csytan
+
+service.py
+file
+
+
+
+
+2008-11-15T07:45:36.000000Z
+26a5f7c9cc0ac7d0ddead59035355bcb
+2008-09-24T21:27:41.832192Z
+26
+csytan
+

@@ -1,0 +1,52 @@
+8
+
+dir
+64
+https://pycmds.googlecode.com/svn/trunk/lib/gdata/photos
+https://pycmds.googlecode.com/svn
+
+
+
+2008-09-24T21:27:41.832192Z
+26
+csytan
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+20336228-1552-0410-b6a7-8d8d59c9b0bb
+
+__init__.py
+file
+
+
+
+
+2008-11-15T07:45:49.000000Z
+bea88725cd169e47d7372567d556d646
+2008-09-24T21:27:41.832192Z
+26
+csytan
+
+service.py
+file
+
+
+
+
+2008-11-15T07:45:49.000000Z
+6edcede0bb97a9537685cc591b684c82
+2008-09-24T21:27:41.832192Z
+26
+csytan
+

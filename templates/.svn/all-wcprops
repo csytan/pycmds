@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/64/trunk/templates
+END
+sandbox.html
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/60/trunk/templates/sandbox.html
+END
+editor.html
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/54/trunk/templates/editor.html
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/64/trunk/templates/index.html
+END
+base.html
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/62/trunk/templates/base.html
+END

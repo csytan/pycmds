@@ -1,0 +1,147 @@
+body {
+	color: #FFFFFF;
+	background: #3664A8 url("/static/background.png") repeat fixed;
+	font-family: Helvetica,Arial,sans-serif;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 900px;
+	margin: auto;
+}
+
+a {
+	color: #DC3A8C;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	border: 0;
+	background: transparent;
+}
+
+h1, h2, h3 {
+	color: #5DB0E6;
+}
+
+h1 a, h2 a, h3 a {
+	color: inherit;
+}
+
+#header {
+	position: relative;
+}
+
+#navbar {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+#navbar div {
+	color: #5DB0E6;
+	background-color: #192636;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 1.3em;
+	margin: 10px 10px;
+	float: left;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#navbar div:hover {
+	color: #192636;
+	background-color: #5DB0E6;
+}
+
+#navbar a:hover {
+	text-decoration: none;
+}
+
+#main p {
+	font-size: 1.4em;
+}
+
+.content {
+	background-color: #182F4F;
+	padding: 20px;
+	margin-bottom: 20px;
+	border: 1px solid #0C141F;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+}
+
+#bg-top {
+	display:block;
+	position:relative;
+}
+
+#bg-bottom {
+	display:block;
+	position:relative;
+	top: -20px;
+}
+
+#footer, #suggestions, .alert {
+	font-family: consolas,arial,monospace;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#footer, #suggestions {
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	width: 99.8%;
+	padding: 1px 5px 1px 5px;
+	color: #D7F4D7;
+	background-color: #1D2614;
+	border: 1px dotted #090B06;
+	opacity: 0.8;
+}
+
+#input, .suggestion {
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */ 
+	white-space: -pre-wrap; /* Opera 4 - 6 */ 
+	white-space: -o-pre-wrap; /* Opera 7 */ 
+	word-wrap: break-word; /* IE 5.5+ */
+}
+
+#suggestions {
+	position: fixed;
+	overflow: auto;
+	width: auto;
+	min-width: 100px;
+	max-height: 80%;
+	background-color: #1C1C1C;
+	border: 1px solid #6FA1D9;
+}
+
+.suggestion {
+	border-bottom: 1px dotted #6FA1D9;
+}
+
+.suggestion:hover, .selected {
+	color: #1D2614;
+	background-color: #D7F4D7;
+}
+
+#caret {
+	color: red;
+	text-decoration: blink;
+}
+
+.alert {
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	color: #090B06;
+	background-color: #389AE0;
+	display: none;
+}
